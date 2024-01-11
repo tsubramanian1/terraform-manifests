@@ -43,8 +43,8 @@ resource "google_container_node_pool" "primary_nodes" {
   cluster    = google_container_cluster.primary.name
   
   version = data.google_container_engine_versions.gke_version.release_channel_latest_version["STABLE"]
-  node_count = var.gke_num_nodes
-
+  # node_count = var.gke_num_nodes
+   node_count = 1
   node_config {
     oauth_scopes = [
       "https://www.googleapis.com/auth/logging.write",
