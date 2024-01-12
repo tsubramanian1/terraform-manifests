@@ -2,4 +2,4 @@
 # SPDX-License-Identifier: MPL-2.0
 
 project_id = "jenkinsproject-1234"
-region     = "asia-south1"
+region     = "asia-southb"
